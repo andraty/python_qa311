@@ -86,32 +86,32 @@ print(list_employee)
 
 with open("data_file.json", "w") as write_file:
     json.dump(list_employee, write_file)
-# class City:
-#
-#     def input_data(self):
-#         self.__name_city = input("Введите название города: ")
-#         self.__count_resident = int(input("Введите количество жителей: "))
-#         self.__cod_phone = int(input("Введим код города: "))
-#         self.__print_data()
-#
-#     # Инкапсулирование
-#     def __print_data(self):
-#         print(self.__name_city)
-#         print(self.__count_resident)
-#         print(self.__cod_phone)
-#
-#     def get_name_city(self):
-#         return self.__name_city
-#
-#     def get_count_resident(self):
-#         return self.__count_resident
-#
-#     def get_cod_phone_city(self):
-#         return self.__cod_phone
-#
-# city_1 = City()
-# city_1.input_data()
-# city_1.get_cod_phone_city()
+class City:
+
+    def input_data(self):
+        self.__name_city = input("Введите название города: ")
+        self.__count_resident = int(input("Введите количество жителей: "))
+        self.__cod_phone = int(input("Введим код города: "))
+        self.__print_data()
+
+    # Инкапсулирование
+    def __print_data(self):
+        print(self.__name_city)
+        print(self.__count_resident)
+        print(self.__cod_phone)
+
+    def get_name_city(self):
+        return self.__name_city
+
+    def get_count_resident(self):
+        return self.__count_resident
+
+    def get_cod_phone_city(self):
+        return self.__cod_phone
+
+city_1 = City()
+city_1.input_data()
+city_1.get_cod_phone_city()
 
 
 
