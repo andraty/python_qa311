@@ -80,12 +80,22 @@ for i in range(3):
     employee.input_data()
     employee.input_parametr()
     list_employee.append(i)
-    list_employee[i] = {"ФИО":employee.fio, "Должность":employee.get_post(), "Специализация":employee.get_specialization(), "Основной инструмент":employee.get_main_tools(), "Номер телефона":employee.get_number(), "Дата рождения":employee.get_brithday()}
+    list_employee[i] = {"FIO":employee.fio, "sfgsfg":employee.get_post(), "sfgfgssfgj":employee.get_specialization(), "qwr":employee.get_main_tools(), "phone":employee.get_number(), "brithday":employee.get_brithday()}
 
 print(list_employee)
 
+
+
 with open("data_file.json", "w") as write_file:
-    json.dump(list_employee, write_file)
+    json.dump(list_employee, write_file, )
+
+
+
+
+
+
+
+
 class City:
 
     def input_data(self):
@@ -115,3 +125,10 @@ city_1.get_cod_phone_city()
 
 
 
+
+
+test_{имя}.py
+{имя}_test.py
+
+
+pip install pytest
