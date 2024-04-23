@@ -29,10 +29,10 @@ def get_speed():
     car.accelerate()
     assert car.get_speed() == 5
 
-# установка
-pip install pytest
-pip install pytest-html
-pip install pytest-json
-# запуск
-pytest --html=report.html
-pytest --json=report.json
+# # установка
+# pip install pytest
+# pip install pytest-html
+# pip install pytest-json
+# # запуск
+# pytest --html=report.html
+# pytest --json=report.json
