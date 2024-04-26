@@ -12,13 +12,3 @@ class BasePage:
 
     def element_is_visible(self, locator, timeout=5):
         return Wait(self.driver, timeout).until(EC.visibility_of_element_located(locator))
-
-    def elements_are_visible(self, locator, timeout=5):
-        return Wait(self.driver, timeout).until(EC.visibility_of_all_elements_located(locator))
-
-    def remove_footer(self):
-        try:
-            self.driver.execute_script("document.getElementsByTagName('footer')[0].remove()")
-            self.driver.execute_script("document.getElementsByTagName('fixedban').style.display='none'")
-        except Exception as ex:
-            print(ex)
